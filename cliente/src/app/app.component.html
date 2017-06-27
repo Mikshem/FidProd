@@ -1,0 +1,44 @@
+<!--The whole content below can be removed with the new code.-->
+<md-toolbar color="primary" class="d-flex flex-row" [class.unicorn-dark-theme]="isDarkTheme">
+  <button md-icon-button  (click)="sidenav.toggle()">
+  <md-icon>menu</md-icon>
+  </button>
+
+  <span>Fidalga</span>
+  <button md-icon-button [mdMenuTriggerFor]="menu">
+    <md-icon>more_vert</md-icon>
+  </button>
+  <md-menu #menu="mdMenu" >
+    <button md-menu-item>
+      <md-icon>dialpad</md-icon>
+      <span>Redial</span>
+    </button>
+    <button md-menu-item disabled>
+      <md-icon>voicemail</md-icon>
+      <span>Check voicemail</span>
+    </button>
+    <button md-menu-item>
+      <md-icon>notifications_off</md-icon>
+      <span>Disable alerts</span>
+    </button>
+  </md-menu>
+  
+  <button md-button (click)="isDarkTheme = !isDarkTheme">TOGGLE DARK THEME</button>
+   
+</md-toolbar>
+
+<md-sidenav-container class="example-container" [class.unicorn-dark-theme]="isDarkTheme">
+  
+  <div class="example-sidenav-content">
+      <span>Contenido</span>
+  </div>
+  <md-sidenav #sidenav class="example-sidenav">
+    <button md-menu-item>
+        <md-icon>group_add</md-icon>
+        <span>Proveedores</span>
+      </button>
+  </md-sidenav>
+</md-sidenav-container>
+
+
+
