@@ -15,13 +15,53 @@ md-sidenav {
 }
 
 .example-sidenav {
-  padding: 50px;
+  padding: 15px;
+  background: #fff;
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2),
+                0 6px 10px 0 rgba(0,0,0,.14),
+                0 1px 18px 0 rgba(0,0,0,.12);
 }
 .navigation {
   display: flex;
-  flex-flow: row wrap;
+
+  background-image: linear-gradient( 135deg, #28C76F 100%, #81FBB8 30%);
+}
+.flex-spacer[_ngcontent-c1] {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+ .logo{
+   display: flex;
+   margin: auto 20px;
+   align-items: center;
+   font-weight: 600;
+ }
+.mat-elevation-z6 {
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2),
+                0 6px 10px 0 rgba(0,0,0,.14),
+                0 1px 18px 0 rgba(0,0,0,.12);
 }
 
-.menuf{
-    float: right;
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+a { text-decoration: none;}
+
+.docs-component-viewer-sidenav li {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    margin: 0;
+    padding: 0;
+}
+
+.docs-component-viewer-sidenav li {
+    border-color: rgba(0,0,0,.06);
+    color: rgba(0,0,0,.54);
+}
+.docs-component-viewer-sidenav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }

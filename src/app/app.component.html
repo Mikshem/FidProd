@@ -1,11 +1,14 @@
-<!--The whole content below can be removed with the new code.-->
-<md-toolbar color="primary" class="d-flex flex-row">
+<md-toolbar color="primary" class="navigation mat-elevation-z6">
   <button md-icon-button  (click)="sidenav.toggle()">
   <md-icon>menu</md-icon>
   </button>
+  <div class="logo"><md-icon>shopping_cart</md-icon>
+  <span style="margin-left:5px;">Fidalga</span>
+</div>
+  
+  <div _ngcontent-c1="" class="flex-spacer"></div>
 
-  <span>Fidalga</span>
-  <button md-icon-button [mdMenuTriggerFor]="menu" class="d-flex justify-content-end">
+  <button md-icon-button [mdMenuTriggerFor]="menu" class="fill-remaining-space">
     <md-icon>more_vert</md-icon>
   </button>
   <md-menu #menu="mdMenu" >
@@ -27,8 +30,45 @@
 </md-toolbar>
 
 <md-sidenav-container class="example-container">
-  <md-sidenav #sidenav class="example-sidenav">
-    Jolly good!
+  <md-sidenav #sidenav class="example-sidenav" mode=side opened="true">
+    <nav class="">
+      <h3>Form Controls</h3>
+      <ul class="">
+        <li class="">
+          <a routerlinkactive="docs-component-viewer-sidenav-item-selected" href="/components/autocomplete">
+          Autocomplete
+          </a>
+        </li><li class="">
+          <a routerlinkactive="docs-component-viewer-sidenav-item-selected" href="/components/checkbox">
+            Checkbox
+          </a>
+        </li><li class="">
+          <a routerlinkactive="docs-component-viewer-sidenav-item-selected" href="/components/datepicker">
+            Datepicker
+          </a>
+        </li><li class="">
+          <a routerlinkactive="docs-component-viewer-sidenav-item-selected" href="/components/input">
+            Input
+          </a>
+        </li><li class="">
+          <a routerlinkactive="docs-component-viewer-sidenav-item-selected" href="/components/radio">
+            Radio button
+          </a>
+        </li><li class="">
+          <a routerlinkactive="docs-component-viewer-sidenav-item-selected" href="/components/select">
+            Select
+          </a>
+        </li><li class="">
+          <a routerlinkactive="docs-component-viewer-sidenav-item-selected" href="/components/slider" class="">
+            Slider
+          </a>
+        </li><li class="">
+          <a routerlinkactive="docs-component-viewer-sidenav-item-selected" href="/components/slide-toggle" class="docs-component-viewer-sidenav-item-selected">
+            Slide toggle
+          </a>
+        </li>
+      </ul>
+    </nav>
   </md-sidenav>
 
   <div class="example-sidenav-content">
