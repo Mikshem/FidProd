@@ -28,3 +28,17 @@ md-sidenav {
 .menuf{
     float: right;
 }
+md-toolbar {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: fixed;
+    z-index: 2;
+    font-size: 1.3em;
+    min-height: 64px;
+    width: 100%;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,.6);
+}

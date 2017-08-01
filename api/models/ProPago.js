@@ -1,15 +1,15 @@
 'use strict'
 
-let mongoose = require('mogoose');
+let mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
 var ProPagoSchema = Schema({
-    fecha: new Date(),
+    fecha: Date,
     ctasCts: Number,
     nroRcp: Number,
     nroFac: Number,
     monto: Number,
-    Observacion: String,
+    observacion: String,
     proveedor: { type: Schema.ObjectId, ref:'Proveedor'}
 });
 

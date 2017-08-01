@@ -1,6 +1,6 @@
 'use strict'
 
-let mongoose = require('mogoose');
+let mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
 var ProveedorSchema = Schema({

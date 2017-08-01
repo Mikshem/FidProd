@@ -13,7 +13,7 @@ mongoose.connect('mongodb://localhost:27017/fp_db', (err, res)=>{
         console.log('Coneccion exitosa a la base de datos');
 
         app.listen(port, function(){
-        console.log(`Servidor corriendo en el puerto: http://localhost:` +port);
+        console.log(`Servidor corriendo en el puerto: http://localhost:${port}`);
         })
     }
 })
